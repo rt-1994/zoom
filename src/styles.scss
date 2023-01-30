@@ -1,0 +1,170 @@
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('./assets/fonts/CeraPro-Regular.eot');
+  src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+  url('./assets/fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/CeraPro-Regular.woff') format('woff'),
+  url('./assets/fonts/CeraPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('./assets/fonts/CeraPro-Medium.eot');
+  src: local('Cera Pro Medium'), local('CeraPro-Medium'),
+  url('./assets/fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/CeraPro-Medium.woff') format('woff'),
+  url('./assets/fonts/CeraPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('./assets/fonts/CeraPro-Bold.eot');
+  src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+  url('./assets/fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/CeraPro-Bold.woff') format('woff'),
+  url('./assets/fonts/CeraPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1550px;
+  width: inherit;
+  padding: 0 30px;
+}
+
+
+.button {
+  background: #5D5FEF;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  padding: 12px 22px;
+
+  &:hover {
+    background: #4B4DED;
+    box-shadow: 0px 0px 10px rgba(75, 77, 237, 0.2);
+  }
+
+  &:focus {
+    background: #4B4DED;
+    box-shadow: inset 0px 0px 5px #141566;
+  }
+
+  &:disabled {
+    background: #C3C4E8;
+  }
+
+  &.button-outline {
+    border: 1px solid #5D5FEF;
+    color: #5D5FEF;
+    background: transparent;
+
+    &:hover {
+      color: #4B4DED;
+      box-shadow: none;
+    }
+
+    &:focus {
+      color: #5D5FEF;
+      box-shadow: none;
+    }
+  }
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.label > span {
+  color: #5D5FEF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.input {
+  padding: 12px 20px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+}
+.input:hover {
+  border: 1px solid #2A2A2A;
+}
+.input:focus {
+  border: 1px solid #5D5FEF;
+  box-shadow: 0px 0px 4px #5D5FEF;
+}
+.input::placeholder {
+  color: #A2ADB9;;
+}
